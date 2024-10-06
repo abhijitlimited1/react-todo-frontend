@@ -59,7 +59,7 @@ function Login({ handleLogin }) {
           </tr>
         </table>
       </form>
-      <Link className="mt-4 underline text-blue-600" href="/register">
+      <Link className="mt-4 underline text-blue-600" to="/register">
         create an account
       </Link>
     </div>

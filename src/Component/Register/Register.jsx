@@ -107,7 +107,7 @@ function Register({ handleForm }) {
           </tr>
         </table>
       </form>
-      <Link className="mt-4 underline text-blue-600" href="/login">
+      <Link className="mt-4 underline text-blue-600" to="/login">
         already have an account Login
       </Link>
     </div>
