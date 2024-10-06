@@ -2,6 +2,7 @@ import { FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { PiLockKeyFill } from "react-icons/pi";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Register({ handleForm }) {
   const firstnameValue = useRef("");
@@ -106,9 +107,9 @@ function Register({ handleForm }) {
           </tr>
         </table>
       </form>
-      <a className="mt-4 underline text-blue-600" href="/login">
+      <Link className="mt-4 underline text-blue-600" href="/login">
         already have an account Login
-      </a>
+      </Link>
     </div>
   );
 }

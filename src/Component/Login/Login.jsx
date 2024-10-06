@@ -2,6 +2,7 @@ import { FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { PiLockKeyFill } from "react-icons/pi";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Login({ handleLogin }) {
   const emailValue = useRef("");
@@ -58,9 +59,9 @@ function Login({ handleLogin }) {
           </tr>
         </table>
       </form>
-      <a className="mt-4 underline text-blue-600" href="/register">
+      <Link className="mt-4 underline text-blue-600" href="/register">
         create an account
-      </a>
+      </Link>
     </div>
   );
 }
