@@ -15,7 +15,7 @@ function App() {
       password: password,
     };
 
-    const url = "http://127.0.0.1:8000/api/register/";
+    const url = "https://abhijithemram.pythonanywhere.com/api/register/";
 
     fetch(url, {
       method: "POST",
@@ -41,7 +41,7 @@ function App() {
       password,
     };
 
-    const url = "http://127.0.0.1:8000/api/login/";
+    const url = "https://abhijithemram.pythonanywhere.com/api/login/";
 
     fetch(url, {
       method: "POST",
@@ -69,7 +69,7 @@ function App() {
 
   // Fetch todos from the backend when the component mounts or after an update
   useEffect(() => {
-    const url = "http://127.0.0.1:8000/api/todo/";
+    const url = "https://abhijithemram.pythonanywhere.com/api/todo/";
 
     fetch(url)
       .then((res) => {
@@ -89,7 +89,7 @@ function App() {
 
   // Function to handle adding a new todo
   function handleTodo(todo) {
-    const url = "http://127.0.0.1:8000/api/todo/";
+    const url = "https://abhijithemram.pythonanywhere.com/api/todo/";
 
     fetch(url, {
       method: "POST",
@@ -125,7 +125,7 @@ function App() {
     const updatedTodoList = todoList.map((item, i) => {
       if (index === i) {
         // Send the updated completed status to the backend
-        const url = `http://127.0.0.1:8000/api/todo/${item.id}/`; // Assuming you have the task ID stored in item.id
+        const url = `https://abhijithemram.pythonanywhere.com/api/todo/${item.id}/`; // Assuming you have the task ID stored in item.id
 
         fetch(url, {
           method: "PATCH", // You can use PATCH or PUT depending on your backend
@@ -153,7 +153,7 @@ function App() {
   // below code is for delete todo
   function handleDelete(index) {
     const itemToDelete = todoList[index];
-    const url = `http://127.0.0.1:8000/api/todo/delete/${itemToDelete.id}/`;
+    const url = `https://abhijithemram.pythonanywhere.com/api/todo/delete/${itemToDelete.id}/`;
 
     fetch(url, {
       method: "DELETE",
