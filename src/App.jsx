@@ -59,7 +59,7 @@ function App() {
           localStorage.setItem("first_name", data.first_name);
           localStorage.setItem("last_name", data.last_name);
 
-          window.location.href = "/addtodo";
+          window.location.href = "/";
         }
       });
   }
